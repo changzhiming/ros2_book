@@ -1,11 +1,11 @@
 # 网站基本信息
-site_name: C++ 文档
+site_name: ROS教程 文档
 site_author: changzhiming
 site_url: https://changzhiming.readthedocs.io/
 
 # 仓库信息
 repo_name: changzhiming/readthedocs
-repo_url: https://github.com/changzhiming/readthedocs
+repo_url: https://github.com/changzhiming/ros2_book.git
 edit_uri: edit/main/docs/
 
 
@@ -113,7 +113,7 @@ markdown_extensions:
 
 # 导航结构
 nav:
-  - ROS2基础: ros_base.md
+  - ROS2基础: ros2_base.md
 
 # 插件配置
 plugins:
