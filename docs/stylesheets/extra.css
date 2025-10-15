@@ -1,0 +1,91 @@
+/* 正文字体大小设置 */
+.md-typeset {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+}
+
+.md-typeset p {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+}
+
+.md-typeset h1 {
+    font-size: 2.2rem !important;
+}
+
+.md-typeset h2 {
+    font-size: 1.8rem !important;
+}
+
+.md-typeset h3 {
+    font-size: 1.5rem !important;
+}
+
+.md-typeset h4 {
+    font-size: 1.3rem !important;
+}
+
+.md-typeset h5 {
+    font-size: 1.1rem !important;
+}
+
+.md-typeset h6 {
+    font-size: 1rem !important;
+}
+
+/* 列表字体大小 */
+.md-typeset ul, .md-typeset ol {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+}
+
+.md-typeset li {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+}
+
+/* 代码块字体大小 */
+.md-typeset code {
+    font-size: 14px !important;
+}
+
+.md-typeset pre {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+}
+
+/* 隐藏右侧目录导航 */
+.md-sidebar--secondary {
+    display: none;
+}
+
+/* 扩展主内容区域宽度 */
+.md-main__inner {
+    max-width: none;
+}
+
+.md-content {
+    max-width: none;
+}
+
+/* 调整左侧边栏后的内容布局 */
+.md-grid {
+    max-width: none;
+}
+
+/* 可选：设置合适的最大宽度以保持可读性 */
+.md-typeset {
+    max-width: 100%; /* 或者使用 100% */
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+}
+/* 隐藏整个底部区域 */
+.md-footer {
+    display: none !important;
+}
+
+/* 左侧导航栏字体加粗加大 */
+.md-nav {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+}
