@@ -1,0 +1,30 @@
+# ReadTheDocs配置文件
+version: 2
+
+# 构建配置
+build:
+  os: ubuntu-22.04
+  tools:
+    python: "3.11"
+  jobs:
+    post_install:
+      # 安装额外的依赖
+      - pip install mkdocs-git-revision-date-localized-plugin
+      - pip install mkdocs-git-authors-plugin
+      - pip install mkdocs-mermaid2-plugin
+
+# MkDocs配置
+mkdocs:
+  configuration: mkdocs.yml
+  fail_on_warning: false
+
+# Python配置
+python:
+  install:
+    - requirements: requirements.txt
+
+# 构建输出格式
+formats:
+  - pdf
+  - htmlzip
+  - epub
