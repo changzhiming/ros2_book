@@ -1,80 +1,225 @@
+/* ========== GitHub Gist 风格样式 ========== */
+
+/* 基础字体设置 - 模仿 GitHub */
+:root {
+    --fontStack-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+    --github-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+}
+
 /* 正文字体大小设置 */
 .md-typeset {
+    font-family: var(--github-font-family) !important;
     font-size: 16px !important;
-    line-height: 1.4 !important;
+    line-height: 1.6 !important;
+    color: #1f2328 !important;
 }
 
 .md-typeset p {
     font-size: 16px !important;
-    line-height: 1.4 !important;
+    line-height: 1.6 !important;
+    margin-bottom: 16px !important;
 }
 
+/* 标题样式 - GitHub 风格 */
 .md-typeset h1 {
-    font-size: 1.5rem !important;
+    font-size: 2em !important;
+    font-weight: 600 !important;
+    padding-bottom: 0.3em !important;
+    border-bottom: 1px solid #d0d7de !important;
+    margin-top: 24px !important;
+    margin-bottom: 16px !important;
 }
 
 .md-typeset h2 {
-    font-size: 1.0rem !important;
+    font-size: 1.5em !important;
+    font-weight: 600 !important;
+    padding-bottom: 0.3em !important;
+    border-bottom: 1px solid #d0d7de !important;
+    margin-top: 24px !important;
+    margin-bottom: 16px !important;
 }
 
 .md-typeset h3 {
-    font-size: 0.8rem !important;
+    font-size: 1.25em !important;
+    font-weight: 600 !important;
+    margin-top: 24px !important;
+    margin-bottom: 16px !important;
 }
 
 .md-typeset h4 {
-    font-size: 0.6rem !important;
+    font-size: 1em !important;
+    font-weight: 600 !important;
+    margin-top: 24px !important;
+    margin-bottom: 16px !important;
 }
 
+.md-typeset h5 {
+    font-size: 0.875em !important;
+    font-weight: 600 !important;
+    margin-top: 24px !important;
+    margin-bottom: 16px !important;
+}
 
+.md-typeset h6 {
+    font-size: 0.85em !important;
+    font-weight: 600 !important;
+    color: #656d76 !important;
+    margin-top: 24px !important;
+    margin-bottom: 16px !important;
+}
 
-/* 列表字体大小 */
+/* 列表字体大小 - GitHub 风格 */
 .md-typeset ul, .md-typeset ol {
     font-size: 16px !important;
-    line-height: 1.4 !important;
+    line-height: 1.6 !important;
+    padding-left: 2em !important;
+    margin-bottom: 16px !important;
 }
 
 .md-typeset li {
     font-size: 16px !important;
-    line-height: 1.4 !important;
+    line-height: 1.6 !important;
+    margin-top: 0.25em !important;
 }
 
-/* 代码块字体大小 */
+.md-typeset li + li {
+    margin-top: 0.25em !important;
+}
+
+/* 代码块字体大小 - GitHub 风格 */
 .md-typeset code {
-    font-size: 15px !important;
+    font-family: var(--fontStack-monospace) !important;
+    font-size: 13.6px !important;
+    padding: 0.2em 0.4em !important;
+    background-color: #f6f8fa !important;
+    border-radius: 6px !important;
+    color: #1f2328 !important;
 }
 
 .md-typeset pre {
-    font-size: 16px !important;
-    line-height: 1.4 !important;
+    font-family: var(--fontStack-monospace) !important;
+    font-size: 13.6px !important;
+    line-height: 1.45 !important;
+    background-color: #f6f8fa !important;
+    border-radius: 6px !important;
+    padding: 16px !important;
+    overflow: auto !important;
+    margin-bottom: 16px !important;
+}
+
+.md-typeset pre code {
+    background-color: transparent !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+}
+
+/* 引用块 - GitHub 风格 */
+.md-typeset blockquote {
+    padding: 0 1em !important;
+    color: #656d76 !important;
+    border-left: 0.25em solid #d0d7de !important;
+    margin-bottom: 16px !important;
+}
+
+/* 链接 - GitHub 风格 */
+.md-typeset a {
+    color: #0969da !important;
+    text-decoration: none !important;
+}
+
+.md-typeset a:hover {
+    text-decoration: underline !important;
+}
+
+/* 表格 - GitHub 风格 */
+.md-typeset table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    margin-bottom: 16px !important;
+    overflow: auto !important;
+}
+
+.md-typeset table tr {
+    background-color: #ffffff !important;
+    border-top: 1px solid #d0d7de !important;
+}
+
+.md-typeset table tr:nth-child(2n) {
+    background-color: #f6f8fa !important;
+}
+
+.md-typeset table th,
+.md-typeset table td {
+    padding: 6px 13px !important;
+    border: 1px solid #d0d7de !important;
+}
+
+.md-typeset table th {
+    font-weight: 600 !important;
+    background-color: #f6f8fa !important;
+}
+
+/* 水平线 - GitHub 风格 */
+.md-typeset hr {
+    height: 0.25em !important;
+    padding: 0 !important;
+    margin: 24px 0 !important;
+    background-color: #d0d7de !important;
+    border: 0 !important;
 }
 
 /* 扩展主内容区域宽度 */
 .md-main__inner {
-    max-width: none;
+    max-width: none !important;
 }
 
 .md-content {
-    max-width: none;
+    max-width: none !important;
 }
 
 /* 调整左侧边栏后的内容布局 */
 .md-grid {
-    max-width: none;
+    max-width: none !important;
 }
 
 /* 可选：设置合适的最大宽度以保持可读性 */
 .md-typeset {
-    max-width: 100%; /* 或者使用 100% */
-    font-size: 16px !important;
-    line-height: 1.6 !important;
+    max-width: 100% !important;
 }
+
 /* 隐藏整个底部区域 */
 .md-footer {
     display: none !important;
 }
 
-/* 左侧导航栏字体加粗加大 */
+/* 左侧导航栏字体 - GitHub 风格 */
 .md-nav {
-    font-size: 15px !important;
+    font-family: var(--github-font-family) !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+.md-nav__item {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+.md-nav__link--active {
     font-weight: 600 !important;
+}
+
+/* 图片 - GitHub 风格 */
+.md-typeset img {
+    max-width: 100% !important;
+    box-sizing: content-box !important;
+    background-color: #ffffff !important;
+    border-radius: 6px !important;
+}
+
+/* 行内代码背景优化 */
+.md-typeset p code,
+.md-typeset li code {
+    background-color: rgba(175, 184, 193, 0.2) !important;
+    padding: 0.2em 0.4em !important;
+    border-radius: 6px !important;
 }
